@@ -108,7 +108,7 @@ async def initiate_bot():
         console.print(f"\n[red]Stopping Bot")
         return
     try:
-        await userbot.join_chat("OfficialYukki")
+        await userbot.join_chat("TheBotsWorldChannel")
     except:
         pass
     console.print(f"\n┌[red] Bot Started as {BOT_NAME}!")
@@ -123,7 +123,7 @@ home_text_pm = f"""*Hello ,
 My name is {BOT_NAME}.
 I'm Telegram Voice Chat Audio with some useful features.
 
-All commands can be used with: / *"""
+🇬🇧Developed By : @ToxicDeeModderr*"""
 
 
 @app.on_message(filters.command("help") & filters.private)
