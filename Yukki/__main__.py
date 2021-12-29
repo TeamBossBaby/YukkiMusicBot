@@ -27,7 +27,7 @@ HELPABLE = {}
 
 async def initiate_bot():
     with console.status(
-        "[magenta] Booting up The Yukki Music Bot...",
+        "[magenta] Booting up The Naruto Music Bot...",
     ) as status:
         console.print("┌ [red]Clearing MongoDB cache...")
         try:
@@ -78,7 +78,7 @@ async def initiate_bot():
         await asyncio.sleep(2.4)
         await startup_delete_last(_____)
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! Naruto Music Bot has started successfully!\n"
     )
     try:
         await app.send_message(
@@ -119,11 +119,11 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""Hello ,
+home_text_pm = f"""*Hello ,
 My name is {BOT_NAME}.
 I'm Telegram Voice Chat Audio with some useful features.
 
-All commands can be used with: / """
+All commands can be used with: / *"""
 
 
 @app.on_message(filters.command("help") & filters.private)
